@@ -3,30 +3,39 @@ void setup()
 {
   size(500,500);
   noLoop();
-  bob = new Die(20,20);
-	noLoop();
 }
 void draw()
 {
-bob.show();
+  for(int x = 50; x <=450; x +=60)
+  {
+    for(int y = 250; y <=450; y +=60)
+    bob = new Die(x, y, 55);
+    bob.show();
+  }
+
 }
 void mousePressed()
 {
-	redraw();
+  redraw();
 }
 class Die //models one single dice cube
 {
-	//variable declarations here
-	Die(int x, int y) //constructor
-	{
-    rect(30,30,30,30);
-	}
-	void roll()
-	{
-		//your code here
-	}
-	void show()
-	{
-		//your code here
-	}
+  int myX, myY, myW;
+  Die(int x, int y, int w) //constructor
+  {
+    myX = x;
+    myY = y;
+    myW = w;
+  }
+  void roll()
+  {
+  
+  }
+  void show()
+  {
+    noStroke();
+    fill((int)(Math.random()*156)+100,(int)(Math.random()*156)+100,(int)(Math.random()*156)+100);
+    rect(myX, myY, myW,55);
+    
+  }
 }
