@@ -35,7 +35,30 @@ class Die //models one single dice cube
   {
     if (c == 6)
     {
-      value = //use else if statements for each instance
+      Draw6;
+    }
+    else if (c == 5)
+    {
+      Draw5();
+    }
+    else if (c == 4)
+    {
+      Draw4();
+    }
+    else if (c == 3)
+    {
+      Draw3();
+    }
+    else if (c == 2)
+    {
+      Draw2();
+    }
+    else if (c == 1)
+    {
+      Draw1();
+    }
+      
+      
   
   }
   void show()
