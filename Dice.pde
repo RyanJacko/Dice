@@ -17,7 +17,6 @@ void draw()
       bob.drawBasedonC();
     }
   }
-  System.out.println(total);
   fill((int)(Math.random()*156)+100, (int)(Math.random()*156)+100, (int)(Math.random()*156)+100);
   textSize(200);
   textAlign(CENTER, CENTER);
@@ -39,7 +38,6 @@ class Die
     this.startX = startX;
     this.startY = startY;
     this.c = (int)(Math.random()*6)+1;
-    System.out.println(this.c);
   }
 
   void drawOutside() {
