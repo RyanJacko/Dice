@@ -76,7 +76,9 @@ class Die
         ellipse (x+15+this.startX, y+15+this.startY, 7, 7);
         ellipse (x+35+this.startX, y+35+this.startY, 7, 7);
       }
+    
     }
+      
   }
   void drawThreeDots() 
   {
